@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico" />
+
+    <!-- bootstrap5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Font Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Roboto:ital,wght@1,100;1,300;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Index.css -->
+    <link rel="stylesheet" href="assets/css/index.css" />
+
+    <title>Hoja de vida</title>
+  </head>
+  <body>
+    <div class="container-fluid d-none">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Translate page <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><button id="descargar">Descargar PDF</button></a
+              >
+            </li>
+            <li class="nav-item d-none">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+          <!-- Coloca el botón de traducción en la parte derecha de la barra de navegación -->
+          <div id="google_translate_element" class="ml-auto"></div>
+        </div>
+      </nav>
+    </div>
+    <div class="container pt-4" style="text-align: center">
+      <img
+        src="assets/img/jqs.png"
+        class="mx-auto d-block"
+        alt="Jorge Alberto Quiroz Sierra"
+        width="100px"
+      />
+      <div class="pt-4">
+        <h1>JORGE ALBERTO QUIROZ SIERRA</h1>
+      </div>
+      <div class="pt-1">
+        <small>INGENIERO DE SISTEMAS</small>
+        <small
+          ><i class="fa-solid fa-location-dot"></i> MEDELLIN, COLOMBIA</small
+        >
+        <small><i class="fa-solid fa-phone"></i> 3193662738</small>
+      </div>
+      <div class="clearfix"></div>
+      <div class="row pt-4">
+        <div class="col-md-4">
+
+          <div class="icon-text">
+            <i class="fa-solid fa-address-book"></i>
+            <h4>DATOS PERSONALES</h4>
+          </div>
+          Calle 37 # 38 a 03 Apt 402
+          <div class="clearfix pt-1"></div>
+          Medellin Colombia
+          <div class="clearfix pt-1"></div>
+          3193662738
+          <div class="clearfix pt-1"></div>
+          joralquisi@hotmail.com
+          <div class="clearfix pt-1"></div>
+          Fecha / Lugar de nacimiento
+          <div class="clearfix pt-1"></div>
+          17-10-1985
+          <div class="clearfix pt-1"></div>
+          Villavicencio Meta
+          <div class="clearfix pt-4"></div>
+
+          <div class="icon-text">
+            <i class="fa-solid fa-link"></i>
+            <h4>LINKS</h4>
+          </div>
+          <div class="clearfix pt-1"></div>
+          <div class="container text-center">
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/jorgealqs/" target="_blank">Linkend</a>
+            <div class="clearfix pt-1"></div>
+            <i class="fa-brands fa-facebook"></i>
+            <a href="https://www.facebook.com/jorgealqs" target="_blank">Facebook</a>
+          </div>
+          <div class="clearfix pt-4"></div>
+          <div class="icon-text">
+            <i class="fa-solid fa-link"></i>
+            <h4>COMPETENCIAS</h4>
+          </div>
+          <div class="clearfix pt-1"></div>
+          <div class="container text-center">
+            <span>Django</span>
+            <div class="progress">
+              <div class="progress-bar bg-success progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"  style="width: 85%;"></div>
+            </div>
+            <div class="clearfix pt-2"></div>
+            <span>Python</span>
+            <div class="progress">
+              <div class="progress-bar bg-success progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"  style="width: 90%;"></div>
+            </div>
+            <div class="clearfix pt-2"></div>
+            <span>JavaScript</span>
+            <div class="progress">
+              <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"  style="width: 70%;"></div>
+            </div>
+            <div class="clearfix pt-2"></div>
+            <span>HTML5</span>
+            <div class="progress">
+              <div class="progress-bar bg-success progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"  style="width: 98%;"></div>
+            </div>
+            <div class="clearfix pt-2"></div>
+            <span>Bootstrap</span>
+            <div class="progress">
+              <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"  style="width: 98%;"></div>
+            </div>
+            <div class="clearfix pt-2"></div>
+            <span>PHP</span>
+            <div class="progress">
+              <div class="progress-bar bg-success progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"  style="width: 98%;"></div>
+            </div>
+            <div class="clearfix pt-2"></div>
+            <span>GIT</span>
+            <div class="progress">
+              <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Example 1px high"  style="width: 98%;"></div>
+            </div>
+            <div class="clearfix pt-2"></div>
+          </div>
+          
+        </div>
+        <div class="col-md-8" style="text-align: left">
+          <div class="container">
+            <div class="icon-text">
+              <i class="fas fa-user-tie"></i>
+              <h4>PERFIL PROFESIONAL</h4>
+            </div>
+            Desarrollador web con más de 6 años de experiencia en análisis,
+            diseño, desarrollo, pruebas y despliegue de aplicaciones web.
+            Experto en programación orientada a objetos y patrones de diseño. me
+            apasiona la programación y el aprendizaje constante. Durante más de
+            6 años, he desarrollado habilidades en el análisis, diseño,
+            desarrollo, pruebas y despliegue de aplicaciones web, así como en la
+            implementación de buenas prácticas y patrones de diseño. Me
+            considero una persona disciplinada, proactiva y dedicada, con una
+            gran capacidad para trabajar en equipo y respetar a los demás.
+            Actualmente, busco seguir creciendo profesionalmente y enfrentar
+            nuevos desafíos en el campo del desarrollo web.
+          </div>
+          <div class="clearfix pt-4"></div>
+          <div class="container">
+            <div class="icon-text">
+              <i class="fa-solid fa-briefcase"></i>
+              <h4>EXPERIENCIA LABORAL</h4>
+            </div>
+            <small>
+              <strong> Desarrollador en Ziruma Wood, Medellín </strong>
+              <div class="clearfix"></div>
+              Noviembre 2015 — Agosto 2022
+            </small>
+            <li class="pt-3">
+              Desarrollo y mantenimiento de ERP, inventario, ventas y marketing,
+              utilizando JavaScript (vanilla, jQuery) y PHP como backend, y
+              MySQL como base de datos (utilizando Eloquent como ORM).
+              Mantenimiento del seguimiento de los cambios utilizando Git.
+            </li>
+            <li>
+              Integraciones de API con canales como Amazon, Shopify, Etsy, eBay
+              y Magento.
+            </li>
+            <li>
+              Modificación y actualización de temas de Shopify utilizando
+              plantillas de Liquid.
+            </li>
+            <li>
+              Migración de ERP de desarrollo propio a Odoo Open ERP utilizando
+              Python.
+            </li>
+            <li>
+              Diseño de nuevos módulos basados en las necesidades de los
+              usuarios internos.
+            </li>
+            <li>
+              Dirección del equipo en el proceso de implementación y
+              distribución de tareas de trabajo o proyectos.
+            </li>
+          </div>
+          <div class="clearfix pt-4"></div>
+          <div class="container">
+            <div class="icon-text">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <h4>FORMACIÓN</h4>
+            </div>
+            <strong>
+              Bachiller Academico, IE Jose Acevedo y Gomez, Medellín
+            </strong>
+            <div class="clearfix"></div>
+            <small> Enero 1996 — Diciembre 2022 </small>
+            <div class="clearfix pt-2"></div>
+            <strong>Pregrado, Politécnico Colombiano Jaime Isaza</strong>
+            <div class="clearfix"></div>
+            <small>Cadavid, Medellin Febrero 2009 — Marzo 2016</small>
+          </div>
+          <div class="clearfix pt-4"></div>
+          <div class="container">
+            <div class="icon-text">
+              <i class="fas fa-volume-up"></i>
+              <h4>REFERENCIAS LABORALES</h4>
+            </div>
+            Alejandro Velez, CEO Ziruma Wood, 3054262198.
+            <div class="clearfix pt-4"></div>
+            <div class="icon-text">
+              <i class="fas fa-user"></i>
+              <h4>REFERENCIAS PERSONALES</h4>
+            </div>
+            Jaime Alberto Sierra, Rector, IE José Acevedo y Gómez, 3117478587
+            <div class="clearfix"></div>
+            Mauricio Sierra, Ingeniero, Uniroca, 3122042519
+          </div>
+        </div>
+
+        <div class="clearfix pt-4"></div>
+      </div>
+    </div>
+    <!-- Incluye la biblioteca jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.0/jspdf.umd.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
