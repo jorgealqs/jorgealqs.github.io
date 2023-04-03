@@ -10,7 +10,7 @@
   --text-color: #403a3a;
   --text-color-alight: #707070;
   --container-color: #fafafa;
-  --container-color-alt: #f0efef;
+  --container-color-alt: #dddddd;
   --body-color: #fcfcfc;
 
   /*===== Fonts and typography =====*/
@@ -97,21 +97,19 @@ body.scale-cv {
 }
 
 /*========== Classes modified to reduce size and print on A4 sheet ==========*/
-/* .scale-cv .change-theme,
+.scale-cv .change-theme,
 .scale-cv .generate-pdf{
-    /* display: none; 
-} */
+  display: none; 
+}
 
 .scale-cv .bd-container{
-    max-width: 895px;
+    /* max-width: 895px; */
+    max-width: 625px;
 }
 
-.scale-cv .resume__left,
-.scale-cv .resume__right{
-    padding: 0 1rem;
+.scale-cv .section{
+  padding: 1.5rem 0 .80rem;
 }
-
-
 
 .scale-cv .section{
     padding: 1.5rem 0 .80rem;
@@ -119,6 +117,11 @@ body.scale-cv {
 
 .scale-cv .section-title{
     margin-bottom: .75rem;
+}
+
+.scale-cv .resume__left,
+.scale-cv .resume__right{
+    padding: 0 1rem;
 }
 
 .scale-cv .home__img{

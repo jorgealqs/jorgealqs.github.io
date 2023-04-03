@@ -37,7 +37,7 @@
 
             <li class="nav__item">
               <a href="#education" class="nav__link">
-                <i class="bx bx-book nav__icon"></i>Educacion
+                <i class="bx bx-book nav__icon"></i>Educación
               </a>
             </li>
 
@@ -75,7 +75,7 @@
 
     <main class="l-main bd-container">
       <!-- All elements within this div, is generated in PDF -->
-      <div class="resume">
+      <div class="resume" id="area-cv">
         <div class="resume__left">
           <!--=========== HOME ==========-->
           <section class="home" id="home">
@@ -85,7 +85,7 @@
                 <h1 class="home__title">Jorge Alberto <b>Quiroz Sierra</b></h1>
                 <h3 class="home__profession">Desarrollador Full stack</h3>
                 <!-- Button to download your CVS in the pdf folder -->
-                <div>
+                <div style="display: none;">
                   <a
                     download=""
                     href="assets/pdf/Resume.pdf"
@@ -161,8 +161,7 @@
               habilidades incluye lenguajes de programación como PHP y Python,
               así como bases de datos SQL, lo que me permite tener un
               conocimiento integral del proceso de desarrollo. Soy un
-              colaborador efectivo en equipo, y tengo la capacidad de resolver
-              problemas de manera efectiva, siempre buscando la mejor solución
+              colaborador efectivo en equipo, y tengo la capacidad de resolver problemas, siempre buscando la mejor solución
               para los proyectos en los que participo. Me gusta enfrentar nuevos
               desafíos, ya que considero que son una oportunidad para crecer
               personal y profesionalmente. Además, siempre me interesa aprender
@@ -198,7 +197,7 @@
                   <span class="education__rounder"></span>
                 </div>
                 <div class="education__data bd-grid">
-                  <h3 class="education__title">Ingeniero de systemas</h3>
+                  <h3 class="education__title">Ingeniero informático</h3>
                   <span class="education__studies"
                     >Politécnico Colombiano Jaime Isaza Cadavid</span
                   >
@@ -254,7 +253,6 @@
             </div>
           </section>
         </div>
-
         <div class="resume__right">
           <!--=========== EXPERIENCE ==========-->
           <section class="experience section" id="experience">
@@ -482,6 +480,7 @@
     <!--==================== SCROLL TOP ====================-->
 
     <!--==================== HTML2PDF ====================-->
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
 
     <!--==================== Main JS own ====================-->
     <script src="assets/js/main.js"></script>
