@@ -24,7 +24,7 @@ Soy un Desarrollador Full Stack con más de 6 años de experiencia en el desarro
 
 ## Ver Hoja de Vida
 
-Puedes ver mi hoja de vida en línea en [este enlace](https://tu-enlace-gh-pages-aqui).
+Puedes ver mi hoja de vida en línea en [este enlace](jorgealqs.github.io).
 
 ## Descargar PDF
 
