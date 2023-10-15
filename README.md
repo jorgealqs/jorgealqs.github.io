@@ -28,7 +28,8 @@ Puedes ver mi hoja de vida en línea en [este enlace](https://jorgealqs.github.i
 
 ## Descargar PDF
 
-También puedes descargar mi hoja de vida en formato PDF haciendo clic en el siguiente enlace: [Descargar PDF](https://jorgealqs.github.io/).
+También puedes descargar mi hoja de vida en formato PDF haciendo clic en el siguiente enlace: [Descargar PDF](https://github.com/jorgealqs/jorgealqs.github.io/blob/main/assets/pdf/Resume.pdf "Descargar PDF").
+
 
 ## Redes Sociales
 
