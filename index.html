@@ -1,488 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--==================== Boxicons ====================-->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
-    />
-    <!--==================== Favicon ====================-->
-    <link rel="icon" type="image/png" href="assets/img/favicon.ico" />
-    <!--==================== Styles OWN ====================-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <title>Jorge Quiroz Sierra</title>
-  </head>
-  <body>
-    <!--==================== HEADER ====================-->
-    <header class="l-header" id="header">
-      <nav class="nav bd-container">
-        <a href="#" class="nav__logo">Jorge</a>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">
-                <i class="bx bx-home nav__icon"></i>Home
-              </a>
-            </li>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-            <li class="nav__item">
-              <a href="#profile" class="nav__link">
-                <i class="bx bx-user nav__icon"></i>Perfil
-              </a>
-            </li>
+  <title>jorgealqs</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-            <li class="nav__item">
-              <a href="#education" class="nav__link">
-                <i class="bx bx-book nav__icon"></i>Educación
-              </a>
-            </li>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">
-                <i class="bx bx-receipt nav__icon"></i>Habilidades
-              </a>
-            </li>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-            <li class="nav__item">
-              <a href="#experience" class="nav__link">
-                <i class="bx bx-briefcase-alt nav__icon"></i>Experiencia
-              </a>
-            </li>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-            <li class="nav__item">
-              <a href="#certificates" class="nav__link">
-                <i class="bx bx-award nav__icon"></i>Certificados
-              </a>
-            </li>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-            <li class="nav__item">
-              <a href="#references" class="nav__link">
-                <i class="bx bx-link-external nav__icon"></i>Referencias
-              </a>
-            </li>
-          </ul>
-        </div>
+  <!-- =======================================================
+  * Template Name: MyResume
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
 
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-grid-alt"></i>
-        </div>
-      </nav>
-    </header>
+<body>
 
-    <main class="l-main bd-container">
-      <!-- All elements within this div, is generated in PDF -->
-      <div class="resume" id="area-cv">
-        <div class="resume__left">
-          <!--=========== HOME ==========-->
-          <section class="home" id="home">
-            <div class="home__container section bd-grid">
-              <div class="home__data bd-grid">
-                <img src="assets/img/jqs2.png" alt="" class="home__img" />
-                <h1 class="home__title">Jorge Alberto <b>Quiroz Sierra</b></h1>
-                <h3 class="home__profession">Desarrollador Full stack</h3>
-                <!-- Button to download your CVS in the pdf folder -->
-                <div style="display: none;">
-                  <a
-                    download=""
-                    href="assets/pdf/Resume.pdf"
-                    class="home__button-movil"
-                    >Descargar</a
-                  >
-                </div>
-              </div>
-              <div class="home__address bd-grid">
-                <span class="home__information">
-                  <i class="bx bx-map home__icon"></i> Calle 37 #38 a 03
-                  Medellin - Colombia
-                </span>
-                <span class="home__information">
-                  <i class="bx bx-envelope home__icon"></i>
-                  joralquisi@hotmail.com
-                </span>
-                <span class="home__information">
-                  <i class="bx bx-phone home__icon"></i> +57 319 3662738
-                </span>
-              </div>
-            </div>
-            <!-- Theme change button -->
-            <i
-              class="bx bx-moon change-theme"
-              title="Theme"
-              ,
-              id="theme-button"
-            ></i>
-            <!-- Button to generate and download the pdf, Available for desktop -->
-            <i
-              class="bx bx-download generate-pdf"
-              title="Generate Pdf"
-              id="resume-button"
-            ></i>
-          </section>
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
 
-          <!--=========== SOCIAL ==========-->
-          <section class="social section">
-            <h2 class="section-title">Redes sociales</h2>
-            <div class="social__container bd-grid">
-              <a
-                href="https://www.linkedin.com/in/jorgealqs/"
-                target="_blank"
-                class="social__link"
-              >
-                <i class="bx bxl-linkedin-square social__icon"></i> @jorgealqs
-              </a>
-              <a
-                href="https://www.facebook.com/jorgealqs"
-                target="_blank"
-                class="social__link"
-              >
-                <i class="bx bxl-facebook social__icon"></i> @jorgealqs
-              </a>
-              <a
-                href="https://github.com/jorgealqs"
-                target="_blank"
-                class="social__link"
-              >
-                <i class="bx bxl-github social__icon"></i> @jorgealqs
-              </a>
-            </div>
-          </section>
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Sobre mí</span></a></li>
+        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Hoja de vida</span></a></li>
+        <!-- <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li> -->
+        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Servicios</span></a></li>
+        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contacto</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
 
-          <!--=========== PROFILE ==========-->
-          <section class="profile section" id="profile">
-            <h2 class="section-title">Perfil profesional</h2>
-            <p class="profile__description">
-              Ingeniero Informático con más de 6 años de experiencia en el
-              desarrollo de software, he adquirido habilidades valiosas en el
-              diseño, desarrollo y mantenimiento de aplicaciones. Mi conjunto de
-              habilidades incluye lenguajes de programación como PHP y Python,
-              así como bases de datos SQL, lo que me permite tener un
-              conocimiento integral del proceso de desarrollo. Soy un
-              colaborador efectivo en equipo, y tengo la capacidad de resolver problemas, siempre buscando la mejor solución
-              para los proyectos en los que participo. Me gusta enfrentar nuevos
-              desafíos, ya que considero que son una oportunidad para crecer
-              personal y profesionalmente. Además, siempre me interesa aprender
-              y aplicar tecnologías emergentes, lo que me ha permitido
-              mantenerme actualizado y ser capaz de ofrecer soluciones
-              innovadoras en el campo del desarrollo de software. Estoy
-              convencido de que la actualización constante es clave para el
-              éxito en este campo en constante evolución.
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+          <h1>Jorge Alberto Quiroz Sierra</h1>
+          <p>Soy <span class="typed" data-typed-items="Ingeniero informatico, Desarrollador, Diseñador, Freelancer"></span></p>
+          <div class="social-links">
+              <a href="https://github.com/jorgealqs" class="twitter" target="_blank"><i class="bx bxl-github"></i></a>
+              <a href="https://www.facebook.com/jorgealqs" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.linkedin.com/in/jorgealqs/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          </div>
+      </div>
+  </section>
+<!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Sobre Mí</h2>
+          <p>
+            Soy un Ingeniero Informático con una destacada trayectoria en el desarrollo de software. Mi experiencia abarca múltiples años en la industria y mi conjunto de habilidades incluye lenguajes de programación de alto nivel como PHP y Python, así como una profunda comprensión de bases de datos SQL.
+
+            Me considero un colaborador altamente efectivo en equipos multidisciplinarios, y mi capacidad para resolver problemas de manera efectiva ha sido un activo valioso en todos los proyectos en los que he participado. Mi enfoque en la excelencia en el desarrollo de software se refleja en mi compromiso constante de aprender y aplicar tecnologías emergentes para ofrecer soluciones innovadoras.
+      
+            Estoy firmemente convencido de que la actualización constante y la adaptación a un campo en constante evolución son esenciales para el éxito. Mi objetivo es seguir impulsando la excelencia en el desarrollo de software y contribuir de manera significativa a proyectos desafiantes y orientados a resultados.
             </p>
-          </section>
-
-          <!--=========== EDUCATION ==========-->
-          <section class="education section" id="education">
-            <h2 class="section-title">FORMACIÓN</h2>
-            <div class="education__container bd-grid">
-              <div class="education__content">
-                <div class="education__time">
-                  <span class="education__rounder"></span>
-                  <span class="education__line"></span>
-                </div>
-                <div class="education__data bd-grid">
-                  <h3 class="education__title">Bachiller Academico</h3>
-                  <span class="education__studies"
-                    >IE Jose Acevedo y Gomez</span
-                  >
-                  <span class="education__year"
-                    >Enero 1996 — Diciembre 2022</span
-                  >
-                </div>
-              </div>
-              <div class="education__content">
-                <div class="education__time">
-                  <span class="education__rounder"></span>
-                </div>
-                <div class="education__data bd-grid">
-                  <h3 class="education__title">Ingeniero informático</h3>
-                  <span class="education__studies"
-                    >Politécnico Colombiano Jaime Isaza Cadavid</span
-                  >
-                  <span class="education__year">Febrero 2009 — Marzo 2016</span>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!--=========== SKILLS ==========-->
-          <section class="skills section" id="skills">
-            <h2 class="section-title">Habilidades</h2>
-            <div class="skills__content bd-grid">
-              <ul class="skills__data">
-                <li class="skills__name">
-                  <span class="skills__circle"></span> PHP
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span> Python
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span> REST API, REST & SOAP API
-                  * Postman
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span> Mysql
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span> Postgrest Sql
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span> Amazon Web Services
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span> ERP ODOO
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span> GIT
-                </li>
-              </ul>
-              <ul class="skills__data">
-                <li class="skills__name">
-                  <span class="skills__circle"></span> Html, CSS, Sass,
-                  Bootstrap
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span> JavaScript "Vainilla"
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span> React
-                </li>
-              </ul>
-            </div>
-          </section>
         </div>
-        <div class="resume__right">
-          <!--=========== EXPERIENCE ==========-->
-          <section class="experience section" id="experience">
-            <h2 class="section-title">Experiencia</h2>
-            <div class="experience__container bd-grid">
-              <div class="experience__content">
-                <div class="experience__time">
-                  <span class="experience__rounder"></span>
-                  <span class="experience__line"></span>
-                </div>
-                <div class="experience__data bd-grid">
-                  <h3 class="experience__title">
-                    Desarrollador Backend en Ziruma Wood, Medellín
-                  </h3>
-                  <span class="experience__company"
-                    >Noviembre 2015 — Agosto 2022</span
-                  >
-                  <p class="experience__description">
-                    <li>
-                      Durante mi tiempo en Ziruma Wood, desempeñé un papel clave
-                      en el desarrollo de aplicaciones empresariales, incluyendo
-                      el propio sistema ERP, así como soluciones para el
-                      inventario, ventas y marketing.
-                    </li>
-                    <li>
-                      Como desarrollador full-stack, utilicé mi experiencia en
-                      JavaScript (tanto vanilla como jQuery) y PHP para la parte
-                      del Backend de la aplicación, y empleé MySQL, utilizando
-                      Eloquent como ORM, para la gestión de la base de datos.
-                      Además, aseguré un flujo de trabajo eficiente al mantener
-                      un seguimiento de cambios utilizando Git.
-                    </li>
-                    <li>
-                      Otro de mis logros en la empresa fue la integración de
-                      APIs de canales de venta populares, como Amazon, Shopify,
-                      Etsy, eBay y Magento, lo que permitió la expansión de la
-                      empresa en diversos mercados.
-                    </li>
-                    <li>
-                      También adquirí experiencia en la personalización de temas
-                      de Shopify utilizando plantillas de Liquid, y migré con
-                      éxito un sistema ERP desarrollado internamente a Odoo Open
-                      ERP, basado en Python.
-                    </li>
-                    <li>
-                      Como líder de equipo, trabajé de cerca con mis colegas
-                      para diseñar y desarrollar nuevos módulos basados en las
-                      necesidades de los usuarios internos, y dirigí el proceso
-                      de implementación, distribuyendo tareas y proyectos de
-                      manera efectiva para lograr nuestros objetivos de manera
-                      oportuna.
-                    </li>
-                  </p>
-                  <span class="experience__company"
-                    >Lider y CEO: Alejandro Velez - Movil: 3054262198
-                  </span>
-                </div>
-              </div>
-              <div class="experience__content">
-                <div class="experience__time">
-                  <span class="experience__rounder"></span>
-                </div>
-                <div class="experience__data bd-grid">
-                  <h3 class="experience__title">Freelance, Medellín</h3>
-                  <span class="experience__company"
-                    >Febrero 2023 - Actualmente
-                  </span>
-                  <p class="experience__description">
-                    <li>
-                      Como desarrollador de software independiente, lideré
-                      múltiples proyectos para diferentes clientes, colaborando
-                      estrechamente con ellos para discutir sus requisitos y
-                      necesidades. Desde la etapa de concepción hasta la
-                      implementación, fui el responsable de escribir el código,
-                      llevar a cabo pruebas y solucionar problemas para asegurar
-                      que se cumplieran todos los objetivos del proyecto.
-                    </li>
-
-                    <li>
-                      También desempeñé un papel importante en la creación de la
-                      interfaz de usuario, diseñando experiencias intuitivas y
-                      fáciles de usar para los usuarios finales. Como experto en
-                      integración de sistemas, realicé conexiones sin problemas
-                      con otros sistemas externos para garantizar la eficiencia
-                      y la funcionalidad de la aplicación.
-                    </li>
-
-                    <li>
-                      Además, como profesional autónomo, gestioné eficazmente mi
-                      propio tiempo, presupuesto y tareas administrativas, lo
-                      que me permitió mantener un alto nivel de productividad y
-                      calidad en mi trabajo.
-                    </li>
-                  </p>
-                  <span class="experience__company"
-                    >Yuliana Alzate - Movil: 300 8950354
-                  </span>
-                  <span class="experience__company"
-                    >Diego Gomez - Movil: 300 7077519
-                  </span>
-                  <span class="experience__company"
-                    >Fredy García Córdoba - Movil: 310 2273513
-                  </span>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!--=========== CERTIFICATES ==========-->
-          <section class="certificate section" id="certificates">
-            <h2 class="section-title">Certificados</h2>
-            <div class="certificate__container bd-grid">
-              <h3 class="certificate__title">English A2</h3>
-              <p class="certificate__description">
-                <a target="_blank" href="https://www.campus.live/en/"
-                  >Campus Live</a
-                >
-              </p>
-            </div>
-          </section>
-
-          <!--=========== REFERENCES WORK ==========-->
-          <section class="references section" id="references">
-            <h2 class="section-title">Referencias laborales</h2>
-            <div class="references__container bd-grid">
-              <div class="references__content bd-grid">
-                <span class="references__subtitle">Ingeniero informático</span>
-                <h3 class="references__title">Andres Tabares Velez</h3>
-                <ul class="references__contact">
-                  <li>Movil: +57 350 3250203</li>
+    
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="./assets/img/jqs2.png" class="img-fluid" alt="Tu imagen de perfil">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>Desarrollador Full Stack</h3>
+            <p class="fst-italic">
+              Apasionado por la tecnología y el desarrollo de software. Siempre en busca de aprender y aplicar nuevas tecnologías.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Edad:</strong> <span>38 años</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Correo Electrónico:</strong> <span>joralquisi@hotmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Teléfono:</strong> <span>+57 319 3662738</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Ciudad:</strong> <span>Medellín, Colombia</span></li>
                 </ul>
               </div>
-              <div class="references__content bd-grid">
-                <span class="references__subtitle">Ingeniero de sistemas</span>
-                <h3 class="references__title">Yeison Aristizabal</h3>
-                <ul class="references__contact">
-                  <li>Movil: +57 311 7689030</li>
-                </ul>
-              </div>
-              <div class="references__content bd-grid">
-                <span class="references__subtitle">Ingeniero de sistemas</span>
-                <h3 class="references__title">David Medina</h3>
-                <ul class="references__contact">
-                  <li>Movil: +57 350 8800871</li>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Disponible</span></li>
                 </ul>
               </div>
             </div>
-          </section>
+            <p>Soy un apasionado del desarrollo de software y estoy firmemente comprometido con la búsqueda de la excelencia en cada proyecto en el que participo. Mi fascinación por la tecnología y mi sed de conocimiento me han llevado a explorar y dominar una variedad de lenguajes de programación, marcos de trabajo y herramientas.</p>
 
-          <!--=========== REFERENCES PERSONALES ==========-->
-          <section class="references section" id="references">
-            <h2 class="section-title">Referencias personales</h2>
-            <div class="references__container bd-grid">
-              <div class="references__content bd-grid">
-                <span class="references__subtitle"
-                  >Rector, IE José Acevedo y Gómez</span
-                >
-                <h3 class="references__title">Jaime Alberto Sierra</h3>
-                <ul class="references__contact">
-                  <li>Movil: +57 311 7478587</li>
-                </ul>
-              </div>
-              <div class="references__content bd-grid">
-                <span class="references__subtitle"
-                  >Ingeniero de materiales, Uniroca</span
-                >
-                <h3 class="references__title">Mauricio Sierra</h3>
-                <ul class="references__contact">
-                  <li>Movil: +57 312 2042519</li>
-                </ul>
-              </div>
-            </div>
-          </section>
+            <p>Estoy convencido de que la tecnología tiene el poder de transformar empresas y mejorar la vida de las personas. Si tienes un proyecto interesante o una oportunidad de colaboración en mente, ¡estaré encantado de conocerte! Juntos, podemos dar vida a ideas innovadoras y enfrentar desafíos que impulsen el progreso tecnológico. No dudes en contactarme para explorar cómo podemos trabajar juntos y hacer realidad nuestras visiones.</p>
 
-          <!--=========== Lenguages ==========-->
-          <section class="languages section">
-            <h2 class="section-title">Idiomas</h2>
-            <div class="languages__container">
-              <ul class="languages__content bd-grid">
-                <li class="languages__name">
-                  <span class="languages__circle"></span> English
-                </li>
-                <li class="languages__name">
-                  <span class="languages__circle"></span> Spañol "Nativo"
-                </li>
-              </ul>
-            </div>
-          </section>
-
-          <!--=========== INTERESTS ==========-->
-          <section class="interests section">
-            <h2 class="section-title">Interes</h2>
-            <div class="interests__container bd-grid">
-              <div class="interests__content">
-                <i class="bx bx-headphone interests__icon"></i>
-                <span class="interests__name">Musica</span>
-              </div>
-              <div class="interests__content">
-                <i class="bx bxs-plane-alt interests__icon"></i>
-                <span class="interests__name">Viajar</span>
-              </div>
-              <div class="interests__content">
-                <i class="bx bx-book interests__icon"></i>
-                <span class="interests__name">Leer</span>
-              </div>
-              <div class="interests__content">
-                <i class="bx bx-dumbbell interests__icon"></i>
-                <span class="interests__name">Gimnasio</span>
-              </div>
-              <div class="interests__content">
-                <i class="bx bx-football interests__icon"></i>
-                <span class="interests__name">Futbol</span>
-              </div>
-            </div>
-          </section>
-
-          <!--=========== SCROLL TOP ==========-->
-          <a href="#" class="scrolltop" id="scroll-top">
-            <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
-          </a>
+          </div>
         </div>
       </div>
-    </main>
+    </section>
+    
+    <!-- End About Section -->
 
-    <!--==================== SCROLL TOP ====================-->
+    <!-- ======= Facts Section ======= -->
+    <section id="facts" class="facts">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Logros</h2>
+            <p>En mi carrera como Ingeniero Informático y Desarrollador Full Stack, he acumulado un sólido historial de logros que reflejan mi dedicación y experiencia en el campo del desarrollo de software. Mi pasión por la tecnología y el compromiso con la excelencia me han impulsado a sobresalir en este competitivo ámbito. He liderado y contribuido en proyectos de envergadura, donde mi enfoque en la innovación y la resolución de problemas ha resultado en soluciones tecnológicas de alta calidad.</p>
 
-    <!--==================== HTML2PDF ====================-->
-    <script src="assets/js/html2pdf.bundle.min.js"></script>
+            <p>He adquirido experiencia en una amplia gama de tecnologías, desde el desarrollo front-end hasta el back-end, y todo lo que hay en medio. Mi habilidad para diseñar arquitecturas robustas, escribir código eficiente y colaborar de manera efectiva con equipos multidisciplinarios me ha permitido llevar proyectos desde la concepción hasta la implementación.</p>
 
-    <!--==================== Main JS own ====================-->
-    <script src="assets/js/main.js"></script>
-  </body>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Años de Experiencia</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Proyectos Completados</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="124800" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Horas de Desarrollo</p>
+            </div>
+          </div>
+          <!-- <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-award"></i>
+              <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Certificaciones</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <!-- End Facts Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Habilidades</h2>
+          <p>Como Ingeniero Informático y Desarrollador Full Stack, he desarrollado un conjunto de habilidades sólidas en el campo de la tecnología. Aquí tienes algunas de mis habilidades clave:</p>
+        </div>
+    
+        <div class="row skills-content">
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill">PHP <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+    
+            <div class="progress">
+              <span class="skill">Python <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+    
+            <div class="progress">
+              <span class="skill">Bases de Datos SQL <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Digital Ocean <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+    
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill">Desarrollo Web (HTML, CSS, Bootstrap) <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+    
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+    
+            <div class="progress">
+              <span class="skill">React <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Hoja de Vida</h2>
+          <p>¡Aquí tienes un resumen de mi experiencia y educación! Si estás interesado en colaborar o tienes alguna pregunta, no dudes en contactarme.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Resumen</h3>
+            <div class="resume-item pb-0">
+              <h4>Jorge Alberto Quiroz Sierra</h4>
+              <p><em>Ingeniero Informático con experiencia en el desarrollo de software. Habilidades en PHP, Python y bases de datos SQL. Colaborador efectivo en equipo y apasionado por la innovación tecnológica.</em></p>
+              <ul>
+                <li>Calle 37 #38 a 03, Medellín, Colombia</li>
+                <li>joralquisi@hotmail.com</li>
+                <li>+57 319 3662738</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Educación</h3>
+            <div class="resume-item">
+              <h4>Ingeniero Informático</h4>
+              <h5>Febrero 2009 - Marzo 2016</h5>
+              <p><em>Politécnico Colombiano Jaime Isaza Cadavid, Medellín, Colombia</em></p>
+              <p>Obtuve mi título en Ingeniería Informática con un enfoque en desarrollo de software y tecnologías de la información.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Bachiller Académico</h4>
+              <h5>Enero 1996 - Diciembre 2022</h5>
+              <p><em>IE Jose Acevedo y Gomez, Medellín, Colombia</em></p>
+              <p>Completé mi educación secundaria en el IE Jose Acevedo y Gomez.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="resume-title">Experiencia Profesional</h3>
+            <div class="resume-item">
+              <h4>Desarrollador Backend en Ziruma Wood, Medellín</h4>
+              <h5>Noviembre 2015 - Agosto 2022</h5>
+              <p><em>En mi rol en Ziruma Wood, lideré el desarrollo de aplicaciones empresariales, incluyendo un sistema ERP. Trabajé en el backend utilizando PHP, JavaScript y MySQL. También integré APIs de canales de venta populares.</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>Freelance, Medellín</h4>
+              <h5>Febrero 2023 - Actualmente</h5>
+              <p><em>Como desarrollador independiente, lideré múltiples proyectos para diferentes clientes. Fui responsable de la concepción, desarrollo y entrega de soluciones personalizadas de software.</em></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Resume Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Mis Servicios</h2>
+          <p>¡Descubre cómo puedo ayudarte!</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              <div class="icon">
+                <i class="bx bx-code"></i>
+              </div>
+              <h4><a href="#">Desarrollo Web</a></h4>
+              <p>Creación de sitios web a medida con las últimas tecnologías y mejores prácticas.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-orange">
+              <div class="icon">
+                <i class="bx bx-paint"></i>
+              </div>
+              <h4><a href="#">Diseño Gráfico</a></h4>
+              <p>Desarrollo de identidad de marca, logotipos, gráficos y diseño de materiales promocionales.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-pink">
+              <div class="icon">
+                <i class="bx bx-search-alt-2"></i>
+              </div>
+              <h4><a href="#">Optimización SEO</a></h4>
+              <p>Mejora la visibilidad de tu sitio web en los motores de búsqueda para atraer más tráfico orgánico.</p>
+            </div>
+          </div>
+          <!-- Puedes continuar agregando más servicios aquí -->
+        </div>
+      </div>
+    </section>
+    <!-- End Services Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Contacto</h2>
+        </div>
+        <div class="row mt-1">
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Dirección:</h4>
+                <p>Calle 37 38a 03</p>
+              </div>
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Correo Electrónico:</h4>
+                <p>joralquisi@hotmail.com</p>
+              </div>
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Teléfono:</h4>
+                <p>+57 3193662738</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 mt-5 mt-lg-0">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Tu Correo Electrónico" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Cargando</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
+              </div>
+              <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>jorgealqs</h3>
+      <p>Correo Electrónico: jorgealqs@gmail.com</p>
+      <p>Teléfono: +57 3193662738</p>
+      <div class="social-links">
+        <a href="https://github.com/jorgealqs" class="twitter" target="_blank"><i class="bx bxl-github"></i></a>
+        <a href="https://www.facebook.com/jorgealqs" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/jorgealqs/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Jorge Alberto Quiroz </span></strong>. Todos los derechos reservados
+      </div>
+      <div class="credits">
+        <!-- Todos los enlaces en el pie de página deben permanecer intactos. -->
+        <!-- Puedes eliminar los enlaces solo si compraste la versión pro. -->
+        <!-- Información de licencia: [URL de licencia] -->
+        <!-- Diseñado por <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
