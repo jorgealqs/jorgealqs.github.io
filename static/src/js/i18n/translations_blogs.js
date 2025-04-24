@@ -1,0 +1,96 @@
+export const translationsBlogPosts = {
+    es: {
+        title_blog: "Últimos Blogs",
+        blogs: [
+            {
+                id: "owl-routing",
+                title: "Cómo crear rutas en OWL sin un router",
+                summary: "Aprende a gestionar vistas en OWL usando useState.",
+                tags: ["OWL", "Frontend", "Enrutamiento"],
+                date: "2025-04-23",
+            },
+            {
+                id: "odoo-api",
+                title: "Cómo conectar Odoo 17 con APIs externas",
+                summary: "Una guía práctica paso a paso para integraciones externas.",
+                tags: ["Odoo", "Python", "API"],
+                date: "2025-04-20",
+            },
+            {
+                id: "odoo-docker-setup",
+                title: "Configurar Odoo 17 con Docker Compose paso a paso",
+                summary: "La mejor configuración de desarrollo con PostgreSQL, volúmenes y modo de depuración.",
+                tags: ["Odoo", "Docker", "DevOps"],
+                date: "2025-04-18",
+            },
+            {
+                id: "owl-componentes",
+                title: "Domina OWL: Componentes con Tailwind y Gestión de Vistas",
+                summary: "Usa OWL y TailwindCSS para construir interfaces modulares y elegantes.",
+                tags: ["OWL", "Frontend", "UI"],
+                date: "2025-04-17",
+            },
+            {
+                id: "odoo-pos-restaurant",
+                title: "Sistema POS para Restaurantes con Odoo Community",
+                summary: "Toma de pedidos, control de inventario y compras en una solución.",
+                tags: ["Odoo", "POS", "Restaurantes"],
+                date: "2025-04-15",
+            },
+            {
+                id: "odoo-blog-module",
+                title: "Construir un Módulo de Blog para Odoo 17",
+                summary: "Muestra artículos en una app frontend de OWL con soporte multilinge.",
+                tags: ["Odoo", "OWL", "Blog"],
+                date: "2025-04-13",
+            },
+        ],
+    },
+    en: {
+        title_blog: "Latest Blogs",
+        blogs: [
+            {
+                id: "owl-routing",
+                title: "How to Create Routes in OWL without a Router",
+                summary: "Learn how to manage views in OWL using appState.",
+                tags: ["OWL", "Frontend", "Routing"],
+                date: "2025-04-23",
+            },
+            {
+                id: "odoo-api",
+                title: "How to Connect Odoo 17 with External APIs",
+                summary: "A practical step-by-step guide for external integrations.",
+                tags: ["Odoo", "Python", "API"],
+                date: "2025-04-20",
+            },
+            {
+                id: "odoo-docker-setup",
+                title: "Set Up Odoo 17 with Docker Compose Step by Step",
+                summary: "Best dev config with PostgreSQL, volumes, and debug mode.",
+                tags: ["Odoo", "Docker", "DevOps"],
+                date: "2025-04-18",
+            },
+            {
+                id: "owl-componentes",
+                title: "Master OWL: Components with Tailwind and View Management",
+                summary: "Use OWL and TailwindCSS to build elegant, modular interfaces.",
+                tags: ["OWL", "Frontend", "UI"],
+                date: "2025-04-17",
+            },
+            {
+                id: "odoo-pos-restaurant",
+                title: "Restaurant POS System with Odoo Community",
+                summary: "Order taking, inventory control and purchasing in one solution.",
+                tags: ["Odoo", "POS", "Restaurants"],
+                date: "2025-04-15",
+            },
+            {
+                id: "odoo-blog-module",
+                title: "Build a Blog Module for Odoo 17",
+                summary: "Display articles in a frontend OWL app with multilingual support.",
+                tags: ["Odoo", "OWL", "Blog"],
+                date: "2025-04-13",
+            },
+        ],
+    },
+};

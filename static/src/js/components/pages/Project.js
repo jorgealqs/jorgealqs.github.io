@@ -1,5 +1,5 @@
 const { Component, xml, onMounted } = owl;
-import { translations } from "../i18n/translations.js";
+import { translations } from "../../i18n/translations.js";
 
 export class ProjectsSection extends Component {
     static template = xml`

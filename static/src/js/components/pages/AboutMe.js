@@ -1,5 +1,5 @@
 const { Component, xml } = owl;
-import { translations } from "../i18n/translations.js";
+import { translations } from "../../i18n/translations.js";
 
 export class AboutMe extends Component {
     static template = xml`

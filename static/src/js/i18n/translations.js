@@ -1,6 +1,7 @@
 export const translations = {
     es: {
         home: "Inicio",
+        blogs: "Blogs",
         project_title: "Proyectos",
         contact: "Contacto",
         welcome: "Bienvenido a mi Portafolio",
@@ -59,6 +60,7 @@ export const translations = {
 
     en: {
         home: "Home",
+        blogs: "Blogs",
         project_title: "Projects",
         contact: "Contact",
         welcome: "Welcome to my Portfolio",
