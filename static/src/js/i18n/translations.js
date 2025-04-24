@@ -23,8 +23,10 @@ export const translations = {
             En mi tiempo libre me gusta explorar nuevas tecnologías, compartir conocimiento y aprender constantemente. Estoy en un camino de crecimiento continuo, tanto profesional como personal.
         `,
         about_stack_title: "Tecnologías que uso",
+        projects_code_title: "Codigó",
+        projects_demo_title: "Demo",
+        projects_technologies_title: "Tecnologías",
         projects: [
-
             {
                 id: 3,
                 name: "Análisis de Loterías",
@@ -41,15 +43,6 @@ export const translations = {
                 technologies: "OWL, Odoo, API-FOOTBALL, Pandas, Chart.js",
                 image: "./static/src/image/Sports.png",
                 code: "https://github.com/jorgealqs/sports-odoo",
-                demo: null,
-            },
-            {
-                id: 1,
-                name: "Sistema de Inventario con Odoo",
-                description: "Módulo personalizado para la gestión de inventario y órdenes en Odoo Community.",
-                technologies: "Odoo, PostgreSQL, Python, XML",
-                image: "/projects/inventario.jpg",
-                code: "https://github.com/jorgealqs/odoo-inventario",
                 demo: null,
             },
             {
@@ -88,8 +81,10 @@ export const translations = {
             In my free time, I explore new tech, share knowledge, and constantly seek personal and professional growth.
         `,
         about_stack_title: "Technologies I Use",
+        projects_code_title: "Code",
+        projects_demo_title: "Demo",
+        projects_technologies_title: "Technologies",
         projects: [
-
             {
                 id: 3,
                 name: "Lottery Analytics",
@@ -106,15 +101,6 @@ export const translations = {
                 technologies: "OWL, Odoo, API-FOOTBALL, Pandas, Chart.js",
                 image: "./static/src/image/Sports.png",
                 code: "https://github.com/jorgealqs/sports-odoo",
-                demo: null,
-            },
-            {
-                id: 1,
-                name: "Inventory System with Odoo",
-                description: "Custom module for inventory and order management in Odoo Community.",
-                technologies: "Odoo, PostgreSQL, Python, XML",
-                image: "/projects/inventario.jpg",
-                code: "https://github.com/jorgealqs/odoo-inventario",
                 demo: null,
             },
             {

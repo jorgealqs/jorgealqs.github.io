@@ -15,12 +15,12 @@ export class Navbar extends Component {
 
                 <!-- Center Links -->
                 <div class="hidden md:flex justify-center flex-1 space-x-10">
-                    <a href="#inicio" class="relative group flex items-center gap-2 text-gray-700 hover:text-indigo-600 transition-all duration-300 hover:scale-105 hover:translate-y-[-2px]">
+                    <a href="#home" class="relative group flex items-center gap-2 text-gray-700 hover:text-indigo-600 transition-all duration-300 hover:scale-105 hover:translate-y-[-2px]">
                         <i class="fas fa-house-user"></i>
                         <span t-esc="this.translations[this.props.appState.lang].home"></span>
                         <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300 rounded"></span>
                     </a>
-                    <a href="#about" class="relative group flex items-center gap-2 text-gray-700 hover:text-indigo-600 transition-all duration-300 hover:scale-105 hover:translate-y-[-2px]">
+                    <a href="#about" class="relative group flex items-center gap-2 text-gray-700 hover:text-indigo-600 transition duration-300 hover:scale-105 hover:translate-y-[-2px]">
                         <i class="fas fa-user"></i>
                         <span t-esc="this.translations[this.props.appState.lang].about_title"></span>
                         <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300 rounded"></span>
@@ -34,11 +34,11 @@ export class Navbar extends Component {
 
                 <!-- Contact & Language -->
                 <div class="hidden md:flex items-center gap-6">
-                    <a href="#contacto" class="relative group flex items-center gap-2 text-gray-700 hover:text-indigo-600 font-medium transition hover:scale-105 hover:translate-y-[-2px]">
+                    <!-- <a href="#contacto" class="relative group flex items-center gap-2 text-gray-700 hover:text-indigo-600 font-medium transition hover:scale-105 hover:translate-y-[-2px]">
                         <i class="fas fa-envelope text-lg"></i>
                         <span t-esc="this.translations[this.props.appState.lang].contact"></span>
                         <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300 rounded"></span>
-                    </a>
+                    </a> -->
                     <div class="flex items-center gap-2 bg-white px-3 py-1 rounded-full border border-gray-200 shadow">
                         <button
                             t-on-click="toggleLangToES"
@@ -81,7 +81,7 @@ export class Navbar extends Component {
 
         <!-- Mobile Menu -->
         <div t-if="state.menuOpen" class="md:hidden px-4 pb-4 pt-2 space-y-3 text-center bg-white shadow-md rounded-b-xl">
-            <a href="#inicio" class="block text-gray-700 hover:text-indigo-600 font-medium transition" t-on-click="closeMenu">
+            <a href="#home" class="block text-gray-700 hover:text-indigo-600 font-medium transition" t-on-click="closeMenu">
                 <i class="fas fa-house-user mr-2"></i>
                 <span t-esc="this.translations[this.props.appState.lang].home"></span>
             </a>
@@ -94,10 +94,10 @@ export class Navbar extends Component {
                 <i class="fas fa-project-diagram mr-2"></i>
                 <span t-esc="this.translations[this.props.appState.lang].project_title"></span>
             </a>
-            <a href="#contacto" class="block text-gray-700 hover:text-indigo-600 font-medium transition" t-on-click="closeMenu">
+            <!-- <a href="#contacto" class="block text-gray-700 hover:text-indigo-600 font-medium transition" t-on-click="closeMenu">
                 <i class="fas fa-envelope mr-2"></i>
                 <span t-esc="this.translations[this.props.appState.lang].contact"></span>
-            </a>
+            </a> -->
             <div class="flex items-center justify-center gap-3 mt-2">
                 <button
                     t-on-click="toggleLangToES"

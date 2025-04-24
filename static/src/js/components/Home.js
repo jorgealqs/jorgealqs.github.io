@@ -3,7 +3,7 @@ import { translations } from "../i18n/translations.js";
 
 export class Home extends Component {
     static template = xml`
-    <section class="flex flex-col-reverse lg:flex-row items-center justify-center py-16 lg:py-34 px-6 gap-10" id="inicio">
+    <section class="flex flex-col-reverse lg:flex-row items-center justify-center py-16 lg:py-34 px-6 gap-10" id="home">
         <div class="text-center lg:text-left max-w-xl space-y-6">
             <div data-aos="fade-up" data-aos-delay="100">
                 <h1 class="text-4xl sm:text-5xl font-bold text-gray-800">

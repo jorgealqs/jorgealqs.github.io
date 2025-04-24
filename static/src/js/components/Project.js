@@ -14,7 +14,9 @@ export class ProjectsSection extends Component {
                     <t t-foreach="this.projects" t-as="project" t-key="project.id">
                         <li class="splide__slide h-full">
                             <div class="bg-indigo-50 rounded-2xl shadow-lg p-6 flex flex-col justify-between hover:shadow-xl transition-shadow">
-                                <img t-att-src="project.image" alt="project screenshot" class="rounded-lg mb-4 h-48 w-full object-contain bg-white p-2"/>
+                            <img t-att-src="project.image" alt="project screenshot"
+                            t-on-click="() => this.showImageModal(project.image)"
+                            class="rounded-lg mb-4 h-48 w-full object-contain bg-white p-2 cursor-pointer hover:scale-105 transition-transform"/>
                                 <h3 class="text-2xl font-semibold text-indigo-800 mb-2">
                                     <t t-esc="project.name"/>
                                 </h3>
@@ -22,11 +24,15 @@ export class ProjectsSection extends Component {
                                     <t t-esc="project.description"/>
                                 </p>
                                 <div class="text-sm text-gray-600 mb-4">
-                                    <strong>Tecnologías:</strong> <t t-esc="project.technologies"/>
+                                    <strong><t t-esc="this.translations[this.props.appState.lang].projects_technologies_title"/>:</strong> <t t-esc="project.technologies"/>
                                 </div>
                                 <div class="flex justify-center gap-4 mt-auto">
-                                    <a t-if="project.demo" t-att-href="project.demo" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-full text-sm shadow transition-transform hover:scale-105">Demo</a>
-                                    <a t-if="project.code" t-att-href="project.code" target="_blank" class="bg-gray-700 hover:bg-gray-800 text-white px-4 py-2 rounded-full text-sm shadow transition-transform hover:scale-105">Código</a>
+                                    <a t-if="project.demo" t-att-href="project.demo" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-full text-sm shadow transition-transform hover:scale-105">
+                                        <t t-esc="this.translations[this.props.appState.lang].projects_demo_title"/>
+                                    </a>
+                                    <a t-if="project.code" t-att-href="project.code" target="_blank" class="bg-gray-700 hover:bg-gray-800 text-white px-4 py-2 rounded-full text-sm shadow transition-transform hover:scale-105">
+                                        <t t-esc="this.translations[this.props.appState.lang].projects_code_title"/>
+                                    </a>
                                 </div>
                             </div>
                         </li>
@@ -65,5 +71,9 @@ export class ProjectsSection extends Component {
 
     get projects() {
         return this.translations[this.props.appState.lang].projects;
+    }
+
+    showImageModal(url) {
+        basicLightbox.create(`<img src="${url}" style="max-width: 90vw; max-height: 90vh;">`).show();
     }
 }

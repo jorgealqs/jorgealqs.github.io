@@ -19,3 +19,46 @@ body {
     color: var(--text-alt-color);
     font-size: var(--text-font-size);
 }
+
+.highlight {
+    position: relative;
+    animation: pulseBorderBottom 2s ease-in-out infinite;
+}
+
+.highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 3px;
+    background: linear-gradient(90deg, #7f9cf5, #c084fc);
+    border-radius: 2px;
+    opacity: 0.7;
+    animation: glowBar 1.5s ease-in-out infinite;
+}
+
+@keyframes glowBar {
+    0%, 100% {
+        opacity: 0.7;
+        transform: scaleX(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scaleX(1.2);
+    }
+}
+
+.floating-btn {
+    font-size: 1.5rem;
+    padding: 0.75rem;
+    border-radius: 9999px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.floating-btn:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
