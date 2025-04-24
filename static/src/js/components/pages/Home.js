@@ -15,9 +15,19 @@ export class Home extends Component {
                     <span t-esc="this.translations[this.props.appState.lang].introText"></span>
                 </p>
             </div>
-            <div data-aos="zoom-in" data-aos-delay="300">
-                <a href="#projects" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-2xl shadow-md transition duration-300">
+            <div data-aos="zoom-in" data-aos-delay="300" class="flex flex-wrap justify-center gap-4">
+                <!-- Ver Proyectos -->
+                <a href="#projects"
+                class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-2xl shadow-lg transition-all duration-300 ease-in-out">
+                    <i class="fas fa-folder-open text-lg"></i>
                     <span t-esc="this.translations[this.props.appState.lang].viewProjects"></span>
+                </a>
+
+                <!-- Descargar CV -->
+                <a t-att-href="this.translations[this.props.appState.lang].url_download_resume"
+                class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-2xl shadow-lg transition-all duration-300 ease-in-out">
+                    <i class="fas fa-download text-lg"></i>
+                    <span t-esc="this.translations[this.props.appState.lang].download_resume"></span>
                 </a>
             </div>
         </div>
