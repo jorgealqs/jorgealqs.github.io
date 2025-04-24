@@ -10,11 +10,15 @@ import { AboutMe } from "./pages/AboutMe.js";
 import { ProjectsSection } from "./pages/Project.js";
 import { initAOSAndObservers } from "../../utils/initAOSAndObservers.js";
 import { BlogsSection } from "./pages/Blogs.js";
+import { CryptoPrices } from "./pages/Crypto.js";
 
 
 export class App extends Component {
 
-    static components = { Navbar, Footer, Home, AboutMe, FloatingButtons, ProjectsSection, BlogsSection };
+    static components = {
+        Navbar, Footer, Home, AboutMe, FloatingButtons, ProjectsSection,
+        BlogsSection, CryptoPrices
+    };
 
     setup() {
         this.appState = useState({
@@ -37,6 +41,9 @@ export class App extends Component {
             </div>
             <div class="flex-grow pt-16" t-if="appState.page === 'blogs'">
                 <BlogsSection appState="appState"/>
+            </div>
+            <div class="flex-grow pt-16" t-if="appState.page === 'crypto'">
+                <CryptoPrices />
             </div>
             <Footer appState="appState"/>
         </div>

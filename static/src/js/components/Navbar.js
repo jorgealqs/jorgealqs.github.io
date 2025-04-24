@@ -37,9 +37,14 @@ export class Navbar extends Component {
 
                 <!-- Contact & Language -->
                 <div class="hidden md:flex items-center gap-6">
-                    <a href="#contacto" class="relative group flex items-center gap-2 text-gray-700 hover:text-indigo-600 font-medium transition hover:scale-105 hover:translate-y-[-2px]" t-on-click="openBlogs">
+                    <a href="#blogs" class="relative group flex items-center gap-2 text-gray-700 hover:text-indigo-600 font-medium transition hover:scale-105 hover:translate-y-[-2px]" t-on-click="openBlogs">
                         <i class="fas fa-blog text-lg"></i>
                         <span t-esc="this.translations[this.props.appState.lang].blogs"></span>
+                        <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300 rounded"></span>
+                    </a>
+                    <a href="#crypto" class="relative group flex items-center gap-2 text-gray-700 hover:text-indigo-600 font-medium transition hover:scale-105 hover:translate-y-[-2px]" t-on-click="openCrypto">
+                        <i class="fas fa-coins text-lg"></i>
+                        <span t-esc="this.translations[this.props.appState.lang].crypto_title"></span>
                         <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300 rounded"></span>
                     </a>
                     <div class="flex items-center gap-2 bg-white px-3 py-1 rounded-full border border-gray-200 shadow">
@@ -99,6 +104,11 @@ export class Navbar extends Component {
                     <span t-esc="this.translations[this.props.appState.lang].project_title"></span>
                 </a>
             </t>
+            <a href="#crypto" class="block text-gray-700 hover:text-indigo-600 font-medium transition" t-on-click="openCrypto">
+                <i class="fas fa-coins text-lg"></i>
+                <span t-esc="this.translations[this.props.appState.lang].crypto_title"></span>
+                <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300 rounded"></span>
+            </a>
             <a href="#contacto" class="block text-gray-700 hover:text-indigo-600 font-medium transition" t-on-click="openBlogs">
                 <i class="fas fa-blog text-lg"></i>
                 <span t-esc="this.translations[this.props.appState.lang].blogs"></span>
@@ -185,6 +195,12 @@ export class Navbar extends Component {
         this.state.menuOpen = false;
         this.props.appState.page = "blogs";
         setPage("blogs")
+    }
+
+    openCrypto() {
+        this.state.menuOpen = false;
+        this.props.appState.page = "crypto";
+        setPage("crypto")
     }
 
 }

@@ -2,6 +2,7 @@ export const translations = {
     es: {
         home: "Inicio",
         blogs: "Blogs",
+        crypto_title: "Monedas",
         project_title: "Proyectos",
         contact: "Contacto",
         welcome: "Bienvenido a mi Portafolio",
@@ -62,6 +63,7 @@ export const translations = {
         home: "Home",
         blogs: "Blogs",
         project_title: "Projects",
+        crypto_title: "Crypto",
         contact: "Contact",
         welcome: "Welcome to my Portfolio",
         footerText: "Thank you for visiting my website.",
