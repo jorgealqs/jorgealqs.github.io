@@ -1,0 +1,21 @@
+/* Importación de tipografías desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); /* añadida por consistencia */
+
+/* Variables CSS globales */
+:root {
+    --text-alt-color: #27292a;
+    --text-font-size: 1.125rem;
+
+    /* Familias tipográficas principales */
+    --text-family-merriweather: 'Merriweather', 'Lora', 'Times New Roman', Georgia, serif;
+    --text-family-poppins: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Estilos globales */
+body {
+    font-family: var(--text-family-merriweather);
+    color: var(--text-alt-color);
+    font-size: var(--text-font-size);
+}
