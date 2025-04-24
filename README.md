@@ -1,48 +1,54 @@
-# Jorge Alberto Quiroz Sierra - Hoja de Vida
+# Jorge Alberto Quiroz Sierra – Hoja de Vida 🧠💻
 
-¡Bienvenido a mi hoja de vida en línea! En este repositorio, encontrarás información sobre mi perfil, habilidades y experiencia profesional.
+¡Bienvenido a mi hoja de vida en línea!
+Aquí encontrarás información relevante sobre mi perfil profesional, habilidades y experiencia en el desarrollo de software.
 
-## Contacto
+---
 
-Puedes ponerte en contacto conmigo a través de mi dirección de correo electrónico: [joralquisi@hotmail.com](mailto:joralquisi@hotmail.com).
+## 📬 Contacto
 
-## Resumen
+- ✉️ Email: [joralquisi@hotmail.com](mailto:joralquisi@hotmail.com)
+- 🌐 Portafolio Web: [jorgealqs.github.io](https://jorgealqs.github.io/)
+- 📄 [Descargar PDF](https://github.com/jorgealqs/jorgealqs.github.io/blob/main/assets/pdf/Resume.pdf "Descargar hoja de vida")
 
-Soy un Desarrollador Full Stack con más de 6 años de experiencia en el desarrollo de software. Mi conjunto de habilidades incluye lenguajes de programación como PHP y Python, así como bases de datos SQL. Siempre estoy en busca de nuevos desafíos y me apasiona aprender y aplicar tecnologías emergentes.
+---
 
-## Secciones
+## 🧑‍💻 Resumen Profesional
 
-- [Perfil Profesional](#perfil-profesional)
-- [Formación](#formación)
-- [Habilidades](#habilidades)
-- [Experiencia](#experiencia)
-- [Certificados](#certificados)
-- [Referencias Laborales](#referencias-laborales)
-- [Referencias Personales](#referencias-personales)
-- [Idiomas](#idiomas)
-- [Intereses](#intereses)
+Soy un Desarrollador Full Stack con más de 6 años de experiencia creando soluciones a medida para empresas.
+Mis fortalezas se centran en lenguajes como **Python** y **PHP**, bases de datos **SQL**, y herramientas modernas como **Odoo**, **Docker**, y **OWL**.
+Me caracterizo por ser autodidacta, enfocado en resultados y apasionado por aprender tecnologías emergentes.
 
-## Ver Hoja de Vida
+---
 
-Puedes ver mi hoja de vida en línea en [este enlace](https://jorgealqs.github.io/).
+## 📚 Secciones
 
-## Descargar PDF
+- [👤 Perfil Profesional](#)
+- [🎓 Formación](#)
+- [🛠️ Habilidades](#)
+- [💼 Experiencia](#)
+- [📜 Certificados](#)
+- [📇 Referencias Laborales](#)
+- [🤝 Referencias Personales](#)
+- [🗣️ Idiomas](#)
+- [🎯 Intereses](#)
 
-También puedes descargar mi hoja de vida en formato PDF haciendo clic en el siguiente enlace: [Descargar PDF](https://github.com/jorgealqs/jorgealqs.github.io/blob/main/assets/pdf/Resume.pdf "Descargar PDF").
+---
 
+## 🌐 Redes Sociales
 
-## Redes Sociales
+- [🔗 LinkedIn](https://www.linkedin.com/in/jorgealqs)
+- [🐙 GitHub](https://github.com/jorgealqs)
+- [📘 Facebook](https://www.facebook.com/jorgealqs)
 
-Conéctate conmigo en las siguientes redes sociales:
+---
 
-- [LinkedIn](https://www.linkedin.com/in/jorgealqs)
-- [Facebook](https://www.facebook.com/jorgealqs)
-- [GitHub](https://github.com/jorgealqs)
+## 🎯 Intereses
 
-## Intereses
+Música 🎶 | Viajar ✈️ | Lectura 📖 | Gimnasio 💪 | Fútbol ⚽
 
-Mis intereses incluyen la música, viajar, la lectura, el gimnasio y el fútbol.
+---
 
-## Creado por Jorge Quiroz Sierra
+## 👨‍💻 Creado por Jorge Alberto Quiroz Sierra
 
-¡Gracias por visitar mi hoja de vida en línea!
+¡Gracias por visitar mi hoja de vida en línea! Si te interesa colaborar o saber más, no dudes en contactarme.
