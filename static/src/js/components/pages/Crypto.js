@@ -1,10 +1,14 @@
 const { Component, useState, onWillStart, onMounted, onWillUnmount, xml } = owl;
+import { translations } from "../../i18n/translations.js";
 
 export class CryptoPrices extends Component {
     static template = xml`
-        <section class="py-16 px-6 bg-gray-100 min-h-screen" id="crypto">
+        <section class="flex flex-col py-16 px-6 gap-10" id="crypto">
             <div class="max-w-7xl mx-auto">
-                <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">🪙 Top 100 Cryptos by Market Cap</h2>
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">
+                    🪙
+                    <t t-esc="this.translations[this.props.state.lang].top_crypto" />
+                </h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     <t t-foreach="state.cryptos" t-as="coin" t-key="coin.id">
                         <div class="bg-white p-5 rounded-2xl shadow hover:shadow-lg transition-all border border-gray-200">
@@ -43,8 +47,13 @@ export class CryptoPrices extends Component {
         </section>
     `;
 
+    static props = {
+        state: Object,
+    };
+
     setup() {
         const state = useState({ cryptos: [] });
+        this.translations = translations;
 
         const fetchPrices = async () => {
             try {

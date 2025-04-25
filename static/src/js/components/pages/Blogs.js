@@ -4,9 +4,9 @@ import { translationsBlogPosts } from "../../i18n/translations_blogs.js";
 
 export class BlogsSection extends Component {
     static template = xml`
-        <section class="flex flex-col py-16 px-6 gap-10 bg-gradient-to-b from-blue-100 to-slate-100" id="blogs">
+        <section class="flex flex-col py-16 px-6 gap-10 " id="blogs">
             <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-12 text-blue-800">
-                <t t-esc="this.translations[this.props.appState.lang].title_blog" />
+                <t t-esc="this.translations[this.props.state.lang].title_blog" />
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
                 <t t-foreach="this.blogs" t-as="blog" t-key="blog.id">
@@ -37,7 +37,7 @@ export class BlogsSection extends Component {
     `;
 
     static props = {
-        appState: Object,
+        state: Object,
     };
 
     setup() {
@@ -49,7 +49,7 @@ export class BlogsSection extends Component {
     }
 
     get blogs() {
-        const lang = this.props.appState?.lang || "es";
+        const lang = this.props.state?.lang || "es";
         return this.translations[lang]?.blogs || [];
     }
 }

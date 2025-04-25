@@ -7,12 +7,12 @@ export class Home extends Component {
         <div class="text-center lg:text-left max-w-xl space-y-6">
             <div data-aos="fade-up" data-aos-delay="100">
                 <h1 class="text-4xl sm:text-5xl font-bold text-gray-800">
-                    <span t-esc="this.translations[this.props.appState.lang].name"></span>
+                    <span t-esc="this.translations[this.props.state.lang].name"></span>
                 </h1>
             </div>
             <div data-aos="fade-up" data-aos-delay="200">
                 <p class="text-lg sm:text-xl text-gray-600">
-                    <span t-esc="this.translations[this.props.appState.lang].introText"></span>
+                    <span t-esc="this.translations[this.props.state.lang].introText"></span>
                 </p>
             </div>
             <div data-aos="zoom-in" data-aos-delay="300" class="flex flex-wrap justify-center gap-4">
@@ -20,14 +20,14 @@ export class Home extends Component {
                 <a href="#projects"
                 class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-2xl shadow-lg transition-all duration-300 ease-in-out">
                     <i class="fas fa-folder-open text-lg"></i>
-                    <span t-esc="this.translations[this.props.appState.lang].viewProjects"></span>
+                    <span t-esc="this.translations[this.props.state.lang].viewProjects"></span>
                 </a>
 
                 <!-- Descargar CV -->
-                <a t-att-href="this.translations[this.props.appState.lang].url_download_resume"
+                <a t-att-href="this.translations[this.props.state.lang].url_download_resume"
                 class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-2xl shadow-lg transition-all duration-300 ease-in-out">
                     <i class="fas fa-download text-lg"></i>
-                    <span t-esc="this.translations[this.props.appState.lang].download_resume"></span>
+                    <span t-esc="this.translations[this.props.state.lang].download_resume"></span>
                 </a>
             </div>
         </div>
@@ -40,7 +40,7 @@ export class Home extends Component {
     `;
 
     static props = {
-        appState: String,
+        state: String,
     };
 
     setup() {

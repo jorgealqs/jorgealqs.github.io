@@ -16,14 +16,20 @@ import { CryptoPrices } from "./pages/Crypto.js";
 export class App extends Component {
 
     static components = {
-        Navbar, Footer, Home, AboutMe, FloatingButtons, ProjectsSection,
-        BlogsSection, CryptoPrices
+        FloatingButtons,
+        Navbar,
+        Footer,
+        Home,
+        AboutMe,
+        ProjectsSection,
+        BlogsSection,
+        CryptoPrices
     };
 
     setup() {
-        this.appState = useState({
+        this.state = useState({
             lang: getLang() || "es",
-            page: getPage() || "home",
+            page: getPage() || "home"
         });
         onMounted(() => {
             initAOSAndObservers();
@@ -31,21 +37,21 @@ export class App extends Component {
     }
 
     static template = xml`
-        <div class="min-h-screen flex flex-col bg-gradient-to-b from-blue-100 to-slate-100">
+        <div class="min-h-screen flex flex-col">
             <FloatingButtons />
-            <Navbar appState="appState"/>
-            <div class="flex-grow pt-16" t-if="appState.page === 'home'">
-                <Home appState="appState"/>
-                <AboutMe appState="appState"/>
-                <ProjectsSection appState="appState"/>
+            <Navbar state="state"/>
+            <div class="flex-grow pt-16" t-if="state.page === 'home'">
+                <Home state="state"/>
+                <AboutMe state="state"/>
+                <ProjectsSection state="state"/>
             </div>
-            <div class="flex-grow pt-16" t-if="appState.page === 'blogs'">
-                <BlogsSection appState="appState"/>
+            <div class="flex-grow pt-16" t-if="state.page === 'blogs'">
+                <BlogsSection state="state"/>
             </div>
-            <div class="flex-grow pt-16" t-if="appState.page === 'crypto'">
-                <CryptoPrices />
+            <div class="flex-grow pt-16" t-if="state.page === 'crypto'">
+                <CryptoPrices state="state"/>
             </div>
-            <Footer appState="appState"/>
+            <Footer state="state"/>
         </div>
     `;
 

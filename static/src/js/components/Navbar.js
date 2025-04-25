@@ -3,6 +3,7 @@ const { Component, xml, useState } = owl;
 import { translations } from "../i18n/translations.js";
 import { setLang } from "../../utils/lang.js";
 import { setPage } from "../../utils/page.js";
+import { toggleDarkMode } from "../../utils/dark_mode.js";
 
 export class Navbar extends Component {
     static template = xml`
@@ -18,18 +19,18 @@ export class Navbar extends Component {
                 <div class="hidden md:flex justify-center flex-1 space-x-10">
                     <a href="#home" class="relative group flex items-center gap-2 text-gray-700 hover:text-indigo-600 transition-all duration-300 hover:scale-105 hover:translate-y-[-2px]" t-on-click="openHome">
                         <i class="fas fa-house-user"></i>
-                        <span t-esc="this.translations[this.props.appState.lang].home"></span>
+                        <span t-esc="this.translations[this.props.state.lang].home"></span>
                         <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300 rounded"></span>
                     </a>
-                    <t t-if="this.props.appState.page === 'home'">
+                    <t t-if="this.props.state.page === 'home'">
                         <a href="#about" class="relative group flex items-center gap-2 text-gray-700 hover:text-indigo-600 transition duration-300 hover:scale-105 hover:translate-y-[-2px]" t-on-click="openHome">
                             <i class="fas fa-user"></i>
-                            <span t-esc="this.translations[this.props.appState.lang].about_title"></span>
+                            <span t-esc="this.translations[this.props.state.lang].about_title"></span>
                             <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300 rounded"></span>
                         </a>
                         <a href="#projects" class="relative group flex items-center gap-2 text-gray-700 hover:text-indigo-600 transition-all duration-300 hover:scale-105 hover:translate-y-[-2px]" t-on-click="openHome">
                             <i class="fas fa-project-diagram"></i>
-                            <span t-esc="this.translations[this.props.appState.lang].project_title"></span>
+                            <span t-esc="this.translations[this.props.state.lang].project_title"></span>
                             <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300 rounded"></span>
                         </a>
                     </t>
@@ -39,12 +40,12 @@ export class Navbar extends Component {
                 <div class="hidden md:flex items-center gap-6">
                     <a href="#blogs" class="relative group flex items-center gap-2 text-gray-700 hover:text-indigo-600 font-medium transition hover:scale-105 hover:translate-y-[-2px]" t-on-click="openBlogs">
                         <i class="fas fa-blog text-lg"></i>
-                        <span t-esc="this.translations[this.props.appState.lang].blogs"></span>
+                        <span t-esc="this.translations[this.props.state.lang].blogs"></span>
                         <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300 rounded"></span>
                     </a>
                     <a href="#crypto" class="relative group flex items-center gap-2 text-gray-700 hover:text-indigo-600 font-medium transition hover:scale-105 hover:translate-y-[-2px]" t-on-click="openCrypto">
                         <i class="fas fa-coins text-lg"></i>
-                        <span t-esc="this.translations[this.props.appState.lang].crypto_title"></span>
+                        <span t-esc="this.translations[this.props.state.lang].crypto_title"></span>
                         <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300 rounded"></span>
                     </a>
                     <div class="flex items-center gap-2 bg-white px-3 py-1 rounded-full border border-gray-200 shadow">
@@ -57,8 +58,8 @@ export class Navbar extends Component {
                                 alt="ES"
                                 t-att-class="{
                                     'h-auto': true,
-                                    'w-8 ring-2 ring-indigo-400 rounded-full scale-110': this.props.appState.lang === 'es',
-                                    'w-6 opacity-70 hover:rotate-[10deg] hover:scale-110': this.props.appState.lang !== 'es'
+                                    'w-8 ring-2 ring-indigo-400 rounded-full scale-110': this.props.state.lang === 'es',
+                                    'w-6 opacity-70 hover:rotate-[10deg] hover:scale-110': this.props.state.lang !== 'es'
                                 }" />
                         </button>
                         <span class="text-gray-400">|</span>
@@ -71,8 +72,8 @@ export class Navbar extends Component {
                                 alt="EN"
                                 t-att-class="{
                                     'h-auto': true,
-                                    'w-8 ring-2 ring-indigo-400 rounded-full scale-110': this.props.appState.lang === 'en',
-                                    'w-6 opacity-70 hover:rotate-[10deg] hover:scale-110': this.props.appState.lang !== 'en'
+                                    'w-8 ring-2 ring-indigo-400 rounded-full scale-110': this.props.state.lang === 'en',
+                                    'w-6 opacity-70 hover:rotate-[10deg] hover:scale-110': this.props.state.lang !== 'en'
                                 }" />
                         </button>
                     </div>
@@ -91,27 +92,27 @@ export class Navbar extends Component {
         <div t-if="state.menuOpen" class="md:hidden px-4 pb-4 pt-2 space-y-3 text-center bg-white shadow-md rounded-b-xl">
             <a href="#home" class="block text-gray-700 hover:text-indigo-600 font-medium transition" t-on-click="closeMenu">
                 <i class="fas fa-house-user mr-2"></i>
-                <span t-esc="this.translations[this.props.appState.lang].home"></span>
+                <span t-esc="this.translations[this.props.state.lang].home"></span>
             </a>
-            <t t-if="this.props.appState.page === 'home'">
+            <t t-if="this.props.state.page === 'home'">
                 <a href="#about" class="block text-gray-700 hover:text-indigo-600 font-medium transition" t-on-click="closeMenu">
                     <i class="fas fa-user"></i>
-                    <span t-esc="this.translations[this.props.appState.lang].about_title"></span>
+                    <span t-esc="this.translations[this.props.state.lang].about_title"></span>
                     <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300 rounded"></span>
                 </a>
                 <a href="#projects" class="block text-gray-700 hover:text-indigo-600 font-medium transition" t-on-click="closeMenu">
                     <i class="fas fa-project-diagram mr-2"></i>
-                    <span t-esc="this.translations[this.props.appState.lang].project_title"></span>
+                    <span t-esc="this.translations[this.props.state.lang].project_title"></span>
                 </a>
             </t>
             <a href="#crypto" class="block text-gray-700 hover:text-indigo-600 font-medium transition" t-on-click="openCrypto">
                 <i class="fas fa-coins text-lg"></i>
-                <span t-esc="this.translations[this.props.appState.lang].crypto_title"></span>
+                <span t-esc="this.translations[this.props.state.lang].crypto_title"></span>
                 <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300 rounded"></span>
             </a>
             <a href="#contacto" class="block text-gray-700 hover:text-indigo-600 font-medium transition" t-on-click="openBlogs">
                 <i class="fas fa-blog text-lg"></i>
-                <span t-esc="this.translations[this.props.appState.lang].blogs"></span>
+                <span t-esc="this.translations[this.props.state.lang].blogs"></span>
                 <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300 rounded"></span>
             </a>
             <div class="flex items-center justify-center gap-3 mt-2">
@@ -124,8 +125,8 @@ export class Navbar extends Component {
                         alt="ES"
                         t-att-class="{
                             'h-auto': true,
-                            'w-8 ring-2 ring-indigo-400 rounded-full scale-110': this.props.appState.lang === 'es',
-                            'w-6 opacity-70 hover:rotate-[10deg] hover:scale-110': this.props.appState.lang !== 'es'
+                            'w-8 ring-2 ring-indigo-400 rounded-full scale-110': this.props.state.lang === 'es',
+                            'w-6 opacity-70 hover:rotate-[10deg] hover:scale-110': this.props.state.lang !== 'es'
                         }" />
                 </button>
                 <span class="text-gray-400">|</span>
@@ -138,8 +139,8 @@ export class Navbar extends Component {
                         alt="EN"
                         t-att-class="{
                             'h-auto': true,
-                            'w-8 ring-2 ring-indigo-400 rounded-full scale-110': this.props.appState.lang === 'en',
-                            'w-6 opacity-70 hover:rotate-[10deg] hover:scale-110': this.props.appState.lang !== 'en'
+                            'w-8 ring-2 ring-indigo-400 rounded-full scale-110': this.props.state.lang === 'en',
+                            'w-6 opacity-70 hover:rotate-[10deg] hover:scale-110': this.props.state.lang !== 'en'
                         }" />
                 </button>
             </div>
@@ -148,7 +149,7 @@ export class Navbar extends Component {
     `;
 
     static props = {
-        appState: String,
+        state: Object,
     };
 
     setup() {
@@ -156,7 +157,6 @@ export class Navbar extends Component {
         this.state = useState({
             menuOpen: false,
         });
-
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('nav');
             if (window.scrollY > 20) {
@@ -177,29 +177,29 @@ export class Navbar extends Component {
     }
 
     toggleLangToES() {
-        this.props.appState.lang = "es";
+        this.props.state.lang = "es";
         setLang("es");
     }
 
     toggleLangToEN() {
-        this.props.appState.lang = "en";
+        this.props.state.lang = "en";
         setLang("en");
     }
 
     openHome() {
-        this.props.appState.page = "home";
+        this.props.state.page = "home";
         setPage("home")
     }
 
     openBlogs() {
         this.state.menuOpen = false;
-        this.props.appState.page = "blogs";
+        this.props.state.page = "blogs";
         setPage("blogs")
     }
 
     openCrypto() {
         this.state.menuOpen = false;
-        this.props.appState.page = "crypto";
+        this.props.state.page = "crypto";
         setPage("crypto")
     }
 

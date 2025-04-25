@@ -5,7 +5,7 @@ export class ProjectsSection extends Component {
     static template = xml`
     <section class="py-16 lg:py-14 px-6 text-center indigo-100" id="projects">
         <h2 class="text-4xl font-extrabold text-indigo-700 mb-10" data-aos="fade-up">
-            <t t-esc="this.translations[this.props.appState.lang].project_title" />
+            <t t-esc="this.translations[this.props.state.lang].project_title" />
         </h2>
 
         <div id="splide" class="splide max-w-5xl mx-auto" data-aos="fade-up">
@@ -24,14 +24,14 @@ export class ProjectsSection extends Component {
                                     <t t-esc="project.description"/>
                                 </p>
                                 <div class="text-sm text-gray-600 mb-4">
-                                    <strong><t t-esc="this.translations[this.props.appState.lang].projects_technologies_title"/>:</strong> <t t-esc="project.technologies"/>
+                                    <strong><t t-esc="this.translations[this.props.state.lang].projects_technologies_title"/>:</strong> <t t-esc="project.technologies"/>
                                 </div>
                                 <div class="flex justify-center gap-4 mt-auto">
                                     <a t-if="project.demo" t-att-href="project.demo" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-full text-sm shadow transition-transform hover:scale-105">
-                                        <t t-esc="this.translations[this.props.appState.lang].projects_demo_title"/>
+                                        <t t-esc="this.translations[this.props.state.lang].projects_demo_title"/>
                                     </a>
                                     <a t-if="project.code" t-att-href="project.code" target="_blank" class="bg-gray-700 hover:bg-gray-800 text-white px-4 py-2 rounded-full text-sm shadow transition-transform hover:scale-105">
-                                        <t t-esc="this.translations[this.props.appState.lang].projects_code_title"/>
+                                        <t t-esc="this.translations[this.props.state.lang].projects_code_title"/>
                                     </a>
                                 </div>
                             </div>
@@ -44,7 +44,7 @@ export class ProjectsSection extends Component {
     `;
 
     static props = {
-        appState: String,
+        state: String,
     };
 
     setup() {
@@ -70,7 +70,7 @@ export class ProjectsSection extends Component {
     }
 
     get projects() {
-        return this.translations[this.props.appState.lang].projects;
+        return this.translations[this.props.state.lang].projects;
     }
 
     showImageModal(url) {

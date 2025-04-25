@@ -7,22 +7,22 @@ export class AboutMe extends Component {
         <div class="max-w-3xl text-center space-y-10">
             <!-- FRASE DESTACADA -->
             <p class="text-indigo-600 text-xl font-semibold tracking-wide">
-                <t t-esc="this.translations[this.props.appState.lang].about_quote"/>
+                <t t-esc="this.translations[this.props.state.lang].about_quote"/>
             </p>
 
             <!-- TÍTULO -->
             <h2 class="text-4xl font-extrabold text-indigo-700" data-aos="fade-up" data-aos-delay="100">
-                <t t-esc="this.translations[this.props.appState.lang].about_title"/>
+                <t t-esc="this.translations[this.props.state.lang].about_title"/>
             </h2>
 
             <!-- BIOGRAFÍA -->
             <p class="text-gray-700 text-lg leading-relaxed" data-aos="fade-up" data-aos-delay="200">
-                <t t-esc="this.translations[this.props.appState.lang].about_bio_extended"/>
+                <t t-esc="this.translations[this.props.state.lang].about_bio_extended"/>
             </p>
 
             <!-- TÍTULO TECNOLOGÍAS -->
             <h3 class="text-2xl font-bold text-indigo-600 mt-6" data-aos="fade-up" data-aos-delay="250">
-                <t t-esc="this.translations[this.props.appState.lang].about_stack_title"/>
+                <t t-esc="this.translations[this.props.state.lang].about_stack_title"/>
             </h3>
 
             <!-- ICONOS DE TECNOLOGÍAS -->
@@ -38,7 +38,7 @@ export class AboutMe extends Component {
     `;
 
     static props = {
-        appState: String,
+        state: String,
     };
 
     setup() {

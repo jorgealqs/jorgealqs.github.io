@@ -6,6 +6,7 @@ export const translations = {
         project_title: "Proyectos",
         download_resume: "Descargar CV",
         url_download_resume: "./static/src/files/Jorge.pdf",
+        top_crypto: "Las 100 principales criptomonedas por capitalización de mercado",
         contact: "Contacto",
         welcome: "Bienvenido a mi Portafolio",
         footerText: "Gracias por visitar mi sitio web.",
@@ -37,7 +38,7 @@ export const translations = {
                 description: "App para análisis de combinaciones de lotería, utilizando scraping y estadísticas personalizadas.",
                 technologies: "Python, Pandas, BeautifulSoup, OWL, Odoo",
                 image: "./static/src/image/Lottery.png",
-                code: "https://github.com/jorgealqs/lottery-analyzer",
+                code: "https://github.com/jorgealqs/odoov17-work/tree/master/addons/lotteries",
                 demo: null,
             },
             {
@@ -46,7 +47,7 @@ export const translations = {
                 description: "Herramienta para visualizar ligas, equipos y partidos en tiempo real usando API externa.",
                 technologies: "OWL, Odoo, API-FOOTBALL, Pandas, Chart.js",
                 image: "./static/src/image/Sports.png",
-                code: "https://github.com/jorgealqs/sports-odoo",
+                code: "https://github.com/jorgealqs/odoov17-work/tree/master/addons/sports_data_sync",
                 demo: null,
             },
             {
@@ -55,8 +56,8 @@ export const translations = {
                 description: "Página promocional responsiva construida desde cero con OWL, Tailwind y animaciones ligeras.",
                 technologies: "OWL, Tailwind CSS, JavaScript, AOS",
                 image: "./static/src/image/Portfolio.png",
-                code: "https://github.com/jorgealqs/landing-owl",
-                demo: "https://landing-jorge.netlify.app",
+                code: "https://github.com/jorgealqs/jorgealqs.github.io",
+                demo: "https://jorgealqs.github.io/",
             }
         ]
     },
@@ -65,6 +66,7 @@ export const translations = {
         home: "Home",
         blogs: "Blogs",
         project_title: "Projects",
+        top_crypto: "Top 100 Cryptos by Market Cap",
         download_resume: "Download Resume",
         url_download_resume: "./static/src/files/Jorge.pdf",
         crypto_title: "Crypto",
@@ -99,7 +101,7 @@ export const translations = {
                 description: "App to analyze lottery number patterns using scraping and custom statistics.",
                 technologies: "Python, Pandas, BeautifulSoup, OWL, Odoo",
                 image: "./static/src/image/Lottery.png",
-                code: "https://github.com/jorgealqs/lottery-analyzer",
+                code: "https://github.com/jorgealqs/odoov17-work/tree/master/addons/lotteries",
                 demo: null,
             },
             {
@@ -108,7 +110,7 @@ export const translations = {
                 description: "Tool to track leagues, teams, and matches in real time using an external API.",
                 technologies: "OWL, Odoo, API-FOOTBALL, Pandas, Chart.js",
                 image: "./static/src/image/Sports.png",
-                code: "https://github.com/jorgealqs/sports-odoo",
+                code: "https://github.com/jorgealqs/odoov17-work/tree/master/addons/sports_data_sync",
                 demo: null,
             },
             {
@@ -117,8 +119,8 @@ export const translations = {
                 description: "Responsive promo page built from scratch with OWL, Tailwind, and light animations.",
                 technologies: "OWL, Tailwind CSS, JavaScript, AOS",
                 image: "./static/src/image/Portfolio.png",
-                code: "https://github.com/jorgealqs/landing-owl",
-                demo: "https://landing-jorge.netlify.app",
+                code: "https://github.com/jorgealqs/jorgealqs.github.io",
+                demo: "https://jorgealqs.github.io/",
             },
         ]
     },

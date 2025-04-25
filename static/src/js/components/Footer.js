@@ -3,16 +3,16 @@ import { translations } from "../i18n/translations.js";
 
 export class Footer extends Component {
     static template = xml`
-    <footer class="bg-gray-100 text-center text-gray-600 py-10 mt-16 border-t border-gray-300 shadow-inner animate-fadeIn">
+    <footer class="text-center text-gray-600 py-10 mt-16 border-t border-gray-300 shadow-inner animate-fadeIn">
         <div class="container mx-auto px-4 space-y-6">
             <!-- Textos -->
             <div>
                 <p class="mb-2 text-base sm:text-lg">
-                    <span t-esc="this.translations[this.props.appState.lang].footerText"></span>
+                    <span t-esc="this.translations[this.props.state.lang].footerText"></span>
                 </p>
                 <p class="text-sm sm:text-base">
                     &#169; 2025 <span class="text-indigo-600 font-semibold">JorgeDev</span>.
-                    <span t-esc="this.translations[this.props.appState.lang].rightsReserved"></span>
+                    <span t-esc="this.translations[this.props.state.lang].rightsReserved"></span>
                 </p>
             </div>
 
@@ -39,7 +39,7 @@ export class Footer extends Component {
     `;
 
     static props = {
-        appState: String,
+        state: String,
     };
 
     setup() {

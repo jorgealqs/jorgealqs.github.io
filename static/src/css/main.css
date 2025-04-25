@@ -16,8 +16,6 @@
 /* Estilos globales */
 body {
     font-family: var(--text-family-merriweather);
-    color: var(--text-alt-color);
-    font-size: var(--text-font-size);
 }
 
 .highlight {

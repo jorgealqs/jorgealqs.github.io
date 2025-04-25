@@ -52,7 +52,7 @@ export const translationsBlogPosts = {
             {
                 id: "owl-routing",
                 title: "How to Create Routes in OWL without a Router",
-                summary: "Learn how to manage views in OWL using appState.",
+                summary: "Learn how to manage views in OWL using state.",
                 tags: ["OWL", "Frontend", "Routing"],
                 date: "2025-04-23",
             },
