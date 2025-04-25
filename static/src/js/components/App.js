@@ -37,7 +37,7 @@ export class App extends Component {
     }
 
     static template = xml`
-        <div class="min-h-screen flex flex-col">
+        <div class="min-h-screen flex flex-col bg-gradient-to-b from-blue-100 to-slate-100">
             <FloatingButtons />
             <Navbar state="state"/>
             <div class="flex-grow pt-16" t-if="state.page === 'home'">
