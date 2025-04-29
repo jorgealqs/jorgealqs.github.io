@@ -27,11 +27,44 @@ export class AboutMe extends Component {
 
             <!-- ICONOS DE TECNOLOGÍAS -->
             <div class="flex justify-center" data-aos="fade-up" data-aos-delay="300">
-                <img
-                    src="https://skillicons.dev/icons?i=python,postgres,tailwind,docker,javascript,git,linux,postman,vscode&amp;perline=5"
-                    alt="Stack tecnológico"
-                    class="rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
-                />
+                <div class="grid grid-cols-3 sm:grid-cols-5 gap-6 justify-items-center">
+                    <div class="flex flex-col items-center gap-1">
+                        <span class="text-sm mb-2 text-gray-700">Python</span>
+                        <img src="https://skillicons.dev/icons?i=python" alt="Python" class="w-12 h-12" />
+                    </div>
+                    <div class="flex flex-col items-center gap-1">
+                        <span class="text-sm mb-2 text-gray-700">PostgreSQL</span>
+                        <img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL" class="w-12 h-12" />
+                    </div>
+                    <div class="flex flex-col items-center gap-1">
+                        <span class="text-sm mb-2 text-gray-700">Tailwind</span>
+                        <img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind" class="w-12 h-12" />
+                    </div>
+                    <div class="flex flex-col items-center gap-1">
+                        <span class="text-sm mb-2 text-gray-700">Docker</span>
+                        <img src="https://skillicons.dev/icons?i=docker" alt="Docker" class="w-12 h-12" />
+                    </div>
+                    <div class="flex flex-col items-center gap-1">
+                        <span class="text-sm mb-2 text-gray-700">Javascript</span>
+                        <img src="https://skillicons.dev/icons?i=javascript" alt="Javascript" class="w-12 h-12" />
+                    </div>
+                    <div class="flex flex-col items-center gap-1">
+                        <span class="text-sm mb-2 text-gray-700">Git</span>
+                        <img src="https://skillicons.dev/icons?i=git" alt="Git" class="w-12 h-12" />
+                    </div>
+                    <div class="flex flex-col items-center gap-1">
+                        <span class="text-sm mb-2 text-gray-700">Linux</span>
+                        <img src="https://skillicons.dev/icons?i=linux" alt="Linux" class="w-12 h-12" />
+                    </div>
+                    <div class="flex flex-col items-center gap-1">
+                        <span class="text-sm mb-2 text-gray-700">Postman</span>
+                        <img src="https://skillicons.dev/icons?i=postman" alt="Postman" class="w-12 h-12" />
+                    </div>
+                    <div class="flex flex-col items-center gap-1">
+                        <span class="text-sm mb-2 text-gray-700">Vscode</span>
+                        <img src="https://skillicons.dev/icons?i=vscode" alt="Vscode" class="w-12 h-12" />
+                    </div>
+                </div>
             </div>
         </div>
     </section>
