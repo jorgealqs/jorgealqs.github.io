@@ -29,6 +29,14 @@ export class AboutMe extends Component {
             <div class="flex justify-center" data-aos="fade-up" data-aos-delay="300">
                 <div class="grid grid-cols-3 sm:grid-cols-5 gap-6 justify-items-center">
                     <div class="flex flex-col items-center gap-1">
+                        <span class="text-sm mb-2 text-gray-700">Odoo</span>
+                        <img src="https://www.odoo.com/web/image/website/1/favicon/" alt="Vscode" class="w-12 h-12" />
+                    </div>
+                    <div class="flex flex-col items-center gap-1">
+                        <span class="text-sm mb-2 text-gray-700">Django Rest Framework</span>
+                        <img src="https://static.djangoproject.com/img/icon-touch.e4872c4da341.png" alt="Django Rest Framework" class="w-12 h-12" />
+                    </div>
+                    <div class="flex flex-col items-center gap-1">
                         <span class="text-sm mb-2 text-gray-700">Python</span>
                         <img src="https://skillicons.dev/icons?i=python" alt="Python" class="w-12 h-12" />
                     </div>
@@ -47,6 +55,10 @@ export class AboutMe extends Component {
                     <div class="flex flex-col items-center gap-1">
                         <span class="text-sm mb-2 text-gray-700">Javascript</span>
                         <img src="https://skillicons.dev/icons?i=javascript" alt="Javascript" class="w-12 h-12" />
+                    </div>
+                    <div class="flex flex-col items-center gap-1">
+                        <span class="text-sm mb-2 text-gray-700">TypeScript</span>
+                        <img src="https://skillicons.dev/icons?i=typescript" alt="Javascript" class="w-12 h-12" />
                     </div>
                     <div class="flex flex-col items-center gap-1">
                         <span class="text-sm mb-2 text-gray-700">Git</span>
