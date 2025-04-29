@@ -30,51 +30,87 @@ export class AboutMe extends Component {
                 <div class="grid grid-cols-3 sm:grid-cols-5 gap-6 justify-items-center">
                     <div class="flex flex-col items-center gap-1">
                         <span class="text-sm mb-2 text-gray-700">Odoo</span>
-                        <img src="https://www.odoo.com/web/image/website/1/favicon/" alt="Vscode" class="w-12 h-12" />
+                        <a href="https://www.odoo.com/documentation/17.0/developer.html" target="_blank">
+                            <img src="https://www.odoo.com/web/image/website/1/favicon/" alt="Odoo"  class="w-12 h-12 transition-transform duration-300 transform hover:scale-110 hover:shadow-lg" />
+                        </a>
                     </div>
                     <div class="flex flex-col items-center gap-1">
                         <span class="text-sm mb-2 text-gray-700">Django Rest Framework</span>
-                        <img src="https://static.djangoproject.com/img/icon-touch.e4872c4da341.png" alt="Django Rest Framework" class="w-12 h-12" />
+                        <a href="https://www.django-rest-framework.org/" target="_blank">
+                            <img src="https://static.djangoproject.com/img/icon-touch.e4872c4da341.png" alt="Django Rest Framework"  class="w-12 h-12 transition-transform duration-300 transform hover:scale-110 hover:shadow-lg" />
+                        </a>
                     </div>
                     <div class="flex flex-col items-center gap-1">
                         <span class="text-sm mb-2 text-gray-700">Python</span>
-                        <img src="https://skillicons.dev/icons?i=python" alt="Python" class="w-12 h-12" />
+                        <a href="https://www.python.org" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=python" alt="Python"  class="w-12 h-12 transition-transform duration-300 transform hover:scale-110 hover:shadow-lg" />
+                        </a>
                     </div>
                     <div class="flex flex-col items-center gap-1">
                         <span class="text-sm mb-2 text-gray-700">PostgreSQL</span>
-                        <img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL" class="w-12 h-12" />
+                        <a href="https://www.postgresql.org" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL"  class="w-12 h-12 transition-transform duration-300 transform hover:scale-110 hover:shadow-lg" />
+                        </a>
                     </div>
                     <div class="flex flex-col items-center gap-1">
                         <span class="text-sm mb-2 text-gray-700">Tailwind</span>
-                        <img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind" class="w-12 h-12" />
+                        <a href="https://tailwindcss.com" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind"  class="w-12 h-12 transition-transform duration-300 transform hover:scale-110 hover:shadow-lg" />
+                        </a>
+                    </div>
+                    <div class="flex flex-col items-center gap-1">
+                        <span class="text-sm mb-2 text-gray-700">Bootstrap5</span>
+                        <a href="https://getbootstrap.com/" target="_blank">
+                            <img src="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon-32x32.png" alt="Tailwind"  class="w-12 h-12 transition-transform duration-300 transform hover:scale-110 hover:shadow-lg" />
+                        </a>
                     </div>
                     <div class="flex flex-col items-center gap-1">
                         <span class="text-sm mb-2 text-gray-700">Docker</span>
-                        <img src="https://skillicons.dev/icons?i=docker" alt="Docker" class="w-12 h-12" />
+                        <a href="https://www.docker.com" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=docker" alt="Docker"  class="w-12 h-12 transition-transform duration-300 transform hover:scale-110 hover:shadow-lg" />
+                        </a>
                     </div>
                     <div class="flex flex-col items-center gap-1">
                         <span class="text-sm mb-2 text-gray-700">Javascript</span>
-                        <img src="https://skillicons.dev/icons?i=javascript" alt="Javascript" class="w-12 h-12" />
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=javascript" alt="Javascript"  class="w-12 h-12 transition-transform duration-300 transform hover:scale-110 hover:shadow-lg" />
+                        </a>
                     </div>
                     <div class="flex flex-col items-center gap-1">
                         <span class="text-sm mb-2 text-gray-700">TypeScript</span>
-                        <img src="https://skillicons.dev/icons?i=typescript" alt="Javascript" class="w-12 h-12" />
+                        <a href="https://www.typescriptlang.org" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=typescript" alt="TypeScript"  class="w-12 h-12 transition-transform duration-300 transform hover:scale-110 hover:shadow-lg" />
+                        </a>
                     </div>
                     <div class="flex flex-col items-center gap-1">
                         <span class="text-sm mb-2 text-gray-700">Git</span>
-                        <img src="https://skillicons.dev/icons?i=git" alt="Git" class="w-12 h-12" />
+                        <a href="https://git-scm.com" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=git" alt="Git"  class="w-12 h-12 transition-transform duration-300 transform hover:scale-110 hover:shadow-lg" />
+                        </a>
                     </div>
                     <div class="flex flex-col items-center gap-1">
                         <span class="text-sm mb-2 text-gray-700">Linux</span>
-                        <img src="https://skillicons.dev/icons?i=linux" alt="Linux" class="w-12 h-12" />
+                        <a href="https://www.linux.org" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=linux" alt="Linux"  class="w-12 h-12 transition-transform duration-300 transform hover:scale-110 hover:shadow-lg" />
+                        </a>
                     </div>
                     <div class="flex flex-col items-center gap-1">
                         <span class="text-sm mb-2 text-gray-700">Postman</span>
-                        <img src="https://skillicons.dev/icons?i=postman" alt="Postman" class="w-12 h-12" />
+                        <a href="https://www.postman.com" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=postman" alt="Postman"  class="w-12 h-12 transition-transform duration-300 transform hover:scale-110 hover:shadow-lg" />
+                        </a>
                     </div>
                     <div class="flex flex-col items-center gap-1">
                         <span class="text-sm mb-2 text-gray-700">Vscode</span>
-                        <img src="https://skillicons.dev/icons?i=vscode" alt="Vscode" class="w-12 h-12" />
+                        <a href="https://code.visualstudio.com" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=vscode" alt="Vscode"  class="w-12 h-12 transition-transform duration-300 transform hover:scale-110 hover:shadow-lg" />
+                        </a>
+                    </div>
+                    <div class="flex flex-col items-center gap-1">
+                        <span class="text-sm mb-2 text-gray-700">Api-Football</span>
+                        <a href="https://dashboard.api-football.com/" target="_blank">
+                            <img src="https://dashboard.api-football.com/public/img/api-sports-small-logo.png" alt="Vscode"  class="w-12 h-12 transition-transform duration-300 transform hover:scale-110 hover:shadow-lg" />
+                        </a>
                     </div>
                 </div>
             </div>
